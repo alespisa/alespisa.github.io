@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #051e09;
+    font-family: Arial, sans-serif;
+}
+#startButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    background: #0a3c1b;
+    color: lime;
+    border: 2px solid lime;
+    font-size: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s all ease;
+    z-index: 10;
+}
+#startButton:hover {
+    background: lime;
+    color: #0a3c1b;
+    padding: 20px 35px;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#welcomeMessage {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: lime;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px lime, 0 0 20px lime;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 5;
+}
+.welcome-letter {
+    opacity: 0.4;
+}
+
+#nameMessage {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: lime;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px lime, 0 0 20px lime;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 5;
+}
+.name-letter{
+    opacity: 0.4;;
+}
+
+#matrixMessage {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: lime;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px lime, 0 0 20px lime;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 5;
+}
+.matrix-letter{
+    opacity: 0.4;;
+}
+
+#toMessage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: lime;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px lime, 0 0 20px lime;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 5;
+}
+.to-letter{
+    opacity: 0.4;;
+}
