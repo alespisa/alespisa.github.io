@@ -1,8 +1,7 @@
 const welcomeText = "WELCOME";
 const toText = "TO";
-const nameText = "ALESSANDRO PISANI";
+const nameText = "ALESSANDRO PISANI'S";
 const matrixText = "MATRIX";
-
 
 function revealWelcomeLetter(index) {
     return new Promise((resolve) => {
@@ -84,6 +83,13 @@ function revealMatrixLetter(index){
     });
 }
 
+async function revealWholeText() {
+    await revealWelcomeText();
+    await revealToText();
+    await revealNameText();
+    await revealMatrixText();
+}
+
 async function revealWelcomeText() {
     for (let i = 0; i < welcomeText.length; i++) {
         await revealWelcomeLetter(i);
@@ -97,13 +103,13 @@ async function revealNameText() {
 }
 
 async function revealToText() {
-    for (let i = 0; i < nameText.length; i++) {
+    for (let i = 0; i < toText.length; i++) {
         await revealToLetter(i);
     }
 }
 
 async function revealMatrixText() {
-    for (let i = 0; i < nameText.length; i++) {
+    for (let i = 0; i < matrixText.length; i++) {
         await revealMatrixLetter(i);
     }
 }

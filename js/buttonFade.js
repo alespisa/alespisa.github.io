@@ -9,10 +9,7 @@ startButton.addEventListener('click', () => {
             startButton.style.display = 'none';
             setInterval(draw, 50);
             setTimeout(() => {
-                revealWelcomeText();
-                revealToText();
-                revealNameText();
-                revealMatrixText();
+                revealWholeText();
             }, 5000);
         }
     }, 50);
